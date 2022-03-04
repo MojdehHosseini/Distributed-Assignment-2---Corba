@@ -1,0 +1,18 @@
+/**
+ * Developed to present CORBA usage for Distributes Systems (COMP 6231) course.
+ * Developed by Seyedehmojdeh Haghighat Hosseini
+ *
+ * @author S.mojdeh Haghighat Hosseini
+ */
+
+module DAMSApp{
+    interface DAMS{
+        string addAppointment (in string adminID, in string appointmentID, in string appointmentType, in long capacity);
+        long removeAppointment (in string adminID, in string appointmentID, in string appointmentType);
+        long listAppointmentAvailability (in string adminID, in string appointmentType);
+        long bookAppointment (in string patientID, in string appointmentID, in string appointmentType);
+        long cancelAppointment (in string patientID, in string appointmentID);
+      
+        oneway void shutdown();
+    };
+};
