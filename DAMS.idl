@@ -7,7 +7,7 @@
 
 module DAMSApp{
     interface DAMS{
-        string addAppointment (in string adminID, in string appointmentID, in string appointmentType, in long capacity);
+        long addAppointment (in string adminID, in string appointmentID, in string appointmentType, in long capacity);
         long removeAppointment (in string adminID, in string appointmentID, in string appointmentType);
         long listAppointmentAvailability (in string adminID, in string appointmentType);
         long bookAppointment (in string patientID, in string appointmentID, in string appointmentType);
