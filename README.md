@@ -14,12 +14,12 @@
 > start orbd -ORBInitialPort 8050 -ORBInitialHost localhost
 
 4. Run Server
-> java -classpath "./lib/*:./" DAMSServer
+> java -classpath "./lib/*:./" QueServer
 - (The above command is specific to this project only)
 
 or
 
-> java -classpath "./lib/*:./" DAMSServer -ORBInitialPort 8050 -ORBInitialHost localhost
+> java -classpath "./lib/*:./" QueServer -ORBInitialPort 8050 -ORBInitialHost localhost
 
 5. Run Client
 > java -classpath "./lib/*:./" DAMSClient
